@@ -1,4 +1,4 @@
-# 🐾 PetFind - Mi Aplicación Móvil de Adopción y Reporte de Mascotas
+# PetFind - Mi Aplicación Móvil de Adopción y Reporte de Mascotas
 
 > **Proyecto Universitario / Aplicaciones Móviles**  
 > **Alumno / Desarrollador:** Uriel (`Urielsitoo`)  
@@ -6,12 +6,12 @@
 
 ---
 
-## 📱 ¿De qué trata mi proyecto?
+## ¿De qué trata mi proyecto?
 **PetFind** es una aplicación móvil que estoy desarrollando con **React Native**, **Expo** y **Firebase**. El objetivo principal es ayudar a la comunidad a reportar y encontrar mascotas perdidas, gestionar adopciones de forma sencilla, llevar un carnet de vacunación digital para las mascotas y contar con perfiles de usuario personalizados.
 
 ---
 
-## 🛠️ Stack Tecnológico y Arquitectura que Utilicé
+## Stack Tecnológico y Arquitectura que Utilicé
 - **Framework:** React Native con Expo SDK.
 - **Navegación:** React Navigation (Bottom Tabs & Native Stack / navegación por estado para fluidez).
 - **Backend / Autenticación:** Firebase Authentication (correo/contraseña y logins sociales).
@@ -20,14 +20,14 @@
 
 ---
 
-## 🌿 Mi Estrategia de Ramas (Git Branching)
+## Mi Estrategia de Ramas (Git Branching)
 Para trabajar de manera ordenada y seguir buenas prácticas de control de versiones, dividí mi desarrollo en ramas:
 - `master` / `maestro`: Mi rama principal con el código estable listo para producción y entregas.
 - `feature/adopcion`: La rama de trabajo donde desarrollé y probé los módulos de adopción, carnet virtual y flujos de autenticación.
 
 ---
 
-## 📌 Mis Commits Granulares (Convención)
+## Mis Commits Granulares (Convención)
 En lugar de subir todo en un solo cambio, organicé mis avances con mensajes descriptivos:
 - `feat:` Para la integración de nuevas pantallas y la navegación principal (`SplashScreen`, `LoginScreen`, `RegisterScreen` y las 5 pestañas).
 - `fix:` Para corregir errores de importaciones y ajustar tipos de exportación de mis componentes.
@@ -36,14 +36,14 @@ En lugar de subir todo en un solo cambio, organicé mis avances con mensajes des
 
 ---
 
-## 🏷️ Historial de Versiones y Releases
+## Historial de Versiones y Releases
 - **`v0.1.0-alpha`**: Inicialización de mi repositorio local/remoto y estructura base de Expo.
 - **`v0.2.0-beta`**: Configuración inicial de pestañas e interfaz gráfica.
 - **`v1.0.0-rc`** *(Versión Actual)*: Flujo de autenticación completo con Firebase, carnet de vacunación en *Mi Compañero*, catálogo de razas/especies y navegación de 5 pestañas pulida.
 
 ---
 
-## 📝 Mi Bitácora de Progreso (Changelog)
+## Mi Bitácora de Progreso (Changelog)
 
 | Fecha / Versión | Rama | Descripción de mis Avances y Cambios Realizados |
 | :--- | :--- | :--- |
@@ -53,7 +53,7 @@ En lugar de subir todo en un solo cambio, organicé mis avances con mensajes des
 
 ---
 
-## 🚀 Cómo Ejecutar Mi Proyecto
+## Cómo Ejecutar Mi Proyecto
 1. Clonar el repositorio:
    ```bash
    git clone [https://github.com/Urielsitoo/PetFind.git](https://github.com/Urielsitoo/PetFind.git)
