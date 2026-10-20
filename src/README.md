@@ -1,58 +1,60 @@
-# 🐾 PetFind - Aplicación Móvil de Adopción y Reporte de Mascotas
+# 🐾 PetFind - Mi Aplicación Móvil de Adopción y Reporte de Mascotas
 
-> **Proyecto Universitario / Desarrollo Móvil**  
+> **Proyecto Universitario / Aplicaciones Móviles**  
+> **Alumno / Desarrollador:** Uriel (`Urielsitoo`)  
 > **Repositorio Oficial:** [Urielsitoo/PetFind](https://github.com/Urielsitoo/PetFind)
 
 ---
 
-## 📱 Descripción del Proyecto
-**PetFind** es una aplicación móvil desarrollada en **React Native** con **Expo** y **Firebase**, diseñada para conectar a la comunidad en la búsqueda de mascotas perdidas, gestión de adopciones, carnet de vacunación virtual y perfil de usuario.
+## 📱 ¿De qué trata mi proyecto?
+**PetFind** es una aplicación móvil que estoy desarrollando con **React Native**, **Expo** y **Firebase**. El objetivo principal es ayudar a la comunidad a reportar y encontrar mascotas perdidas, gestionar adopciones de forma sencilla, llevar un carnet de vacunación digital para las mascotas y contar con perfiles de usuario personalizados.
 
 ---
 
-## 🛠️ Stack Tecnológico y Arquitectura
+## 🛠️ Stack Tecnológico y Arquitectura que Utilicé
 - **Framework:** React Native con Expo SDK.
-- **Navegación:** React Navigation (Bottom Tabs & Native Stack).
-- **Backend / Auth:** Firebase Authentication.
-- **Diseño / Identidad:** Paleta corporativa institucional (*Crema #FFF8DF, Café Tierra #3D3425, Caqui #C2A649*).
-- **Arquitectura:** Modular en `src/` (`components/`, `navigation/`, `screens/`, `config/`, `services/`).
+- **Navegación:** React Navigation (Bottom Tabs & Native Stack / navegación por estado para fluidez).
+- **Backend / Autenticación:** Firebase Authentication (correo/contraseña y logins sociales).
+- **Diseño / Identidad Visual:** Definí una paleta de colores propia para darle identidad corporativa (*Fondo Crema #FFF8DF, Café Tierra #3D3425, Caqui #C2A649*).
+- **Estructura:** Organicé el código de forma modular en la carpeta `src/` (`components/`, `navigation/`, `screens/`, `config/`, `services/`).
 
 ---
 
-## 🌿 Estrategia de Ramas (Git Branching Strategy)
-El proyecto implementa un flujo de trabajo profesional por características:
-- `main` / `master`: Rama principal de producción y entregas estables.
-- `feature/adopcion`: Rama de desarrollo para el módulo de adopciones, carnet digital y flujos de autenticación.
+## 🌿 Mi Estrategia de Ramas (Git Branching)
+Para trabajar de manera ordenada y seguir buenas prácticas de control de versiones, dividí mi desarrollo en ramas:
+- `master` / `maestro`: Mi rama principal con el código estable listo para producción y entregas.
+- `feature/adopcion`: La rama de trabajo donde desarrollé y probé los módulos de adopción, carnet virtual y flujos de autenticación.
 
 ---
 
-## 📌 Guía de Commits Granulares (Conventional Commits)
-- `feat:` Integración de navegación principal y flujo de autenticación (`LoginScreen` y `RegisterScreen`).
-- `fix:` Corrección de importaciones y resolución de dependencias.
-- `chore:` Eliminación de archivos temporales de prácticas anteriores (`DemoProfeScreen.tsx`).
-- `docs:` Actualización de bitácora y documentación del proyecto.
+## 📌 Mis Commits Granulares (Convención)
+En lugar de subir todo en un solo cambio, organicé mis avances con mensajes descriptivos:
+- `feat:` Para la integración de nuevas pantallas y la navegación principal (`SplashScreen`, `LoginScreen`, `RegisterScreen` y las 5 pestañas).
+- `fix:` Para corregir errores de importaciones y ajustar tipos de exportación de mis componentes.
+- `chore:` Para limpiar archivos de prácticas previas y mantener el repositorio impecable (`DemoProfeScreen.tsx`).
+- `docs:` Para actualizar la bitácora de mi proyecto y el README.
 
 ---
 
-## 🏷️ Historial de Versiones (Tags & Releases)
-- **`v0.1.0-alpha`**: Inicialización del repositorio y estructura base en Expo.
-- **`v0.2.0-beta`**: Configuración del sistema de navegación por pestañas y pantallas principales.
-- **`v1.0.0-rc`** *(Actual)*: Módulo de autenticación completo, carnet de vacunación y limpieza de código base para entrega.
+## 🏷️ Historial de Versiones y Releases
+- **`v0.1.0-alpha`**: Inicialización de mi repositorio local/remoto y estructura base de Expo.
+- **`v0.2.0-beta`**: Configuración inicial de pestañas e interfaz gráfica.
+- **`v1.0.0-rc`** *(Versión Actual)*: Flujo de autenticación completo con Firebase, carnet de vacunación en *Mi Compañero*, catálogo de razas/especies y navegación de 5 pestañas pulida.
 
 ---
 
-## 📝 Bitácora de Progreso (Changelog para el Profesor)
+## 📝 Mi Bitácora de Progreso (Changelog)
 
-| Fecha / Versión | Rama | Descripción del Cambio / Hito Académico |
+| Fecha / Versión | Rama | Descripción de mis Avances y Cambios Realizados |
 | :--- | :--- | :--- |
-| **2026-10-20** (`v1.0.0-rc`) | `feature/adopcion` | Integración final del flujo completo (Splash ➔ Login / Register ➔ 5 Tabs principales), limpieza de pantallas de práctica (`DemoProfeScreen`) y conexión con Firebase Auth. |
-| **2026-10-15** (`v0.2.0-beta`) | `feature/adopcion` | Implementación del navegador inferior (`AppNavigator`), diseño de `CompanionScreen` con carnet de vacunas interactivo y vistas de `AdoptionScreen` y `MapScreen`. |
-| **2026-10-10** (`v0.1.0-alpha`) | `master` | Configuración inicial del repositorio local y remoto en GitHub (`Urielsitoo/PetFind`), definición de paleta de colores corporativa y estructura de carpetas en `src/`. |
+| **2026-10-20** (`v1.0.0-rc`) | `feature/adopcion` | Conecté el flujo inicial completo (`SplashScreen` ➔ `LoginScreen` / `RegisterScreen` ➔ Navegador de 5 pestañas). Eliminé archivos de pruebas anteriores (`DemoProfeScreen`) y dejé lista la estructura modular en `src/`. |
+| **2026-10-15** (`v0.2.0-beta`) | `feature/adopcion` | Diseñé la pantalla de `CompanionScreen` agregando el carnet interactivo de vacunas y el catálogo de perros/gatos. Armé el navegador inferior `AppNavigator.tsx`. |
+| **2026-10-10** (`v0.1.0-alpha`) | `master` | Creé mi repositorio en GitHub (`Urielsitoo/PetFind`), estructuré las carpetas en `src/` y configuré la paleta de colores del tema en `theme.ts`. |
 
 ---
 
-## 🚀 Instrucciones de Instalación y Ejecución
-1. Clona el repositorio:
+## 🚀 Cómo Ejecutar Mi Proyecto
+1. Clonar el repositorio:
    ```bash
    git clone [https://github.com/Urielsitoo/PetFind.git](https://github.com/Urielsitoo/PetFind.git)
    cd PetFind
