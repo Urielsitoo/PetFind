@@ -21,13 +21,27 @@ export const LoginScreen = ({ navigation }: any) => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // Manejar Inicio de Sesión con Firebase
+  // Manejar Inicio de Sesión (Bypass temporal para práctica + Firebase real)
   const handleLogin = async () => {
     if (!email.trim() || !password.trim()) {
       Alert.alert('Campos incompletos', 'Por favor ingresa tu correo y contraseña.');
       return;
     }
 
+    // 1. Validar credenciales de la práctica académica
+    if (email.trim() === 'Administrador' && password === 'Uriel123') {
+      Alert.alert('¡Bienvenido!', 'Acceso de administrador concedido.', [
+        {
+          text: 'Continuar',
+          onPress: () => {
+            navigation.replace('MainApp');
+          },
+        },
+      ]);
+      return;
+    }
+
+    // 2. Si no son las de práctica, ejecuta el login normal de Firebase
     setLoading(true);
     try {
       await signInWithEmailAndPassword(auth, email.trim(), password);
@@ -94,14 +108,13 @@ export const LoginScreen = ({ navigation }: any) => {
         {/* Formulario */}
         <View style={styles.form}>
           <View style={styles.inputContainer}>
-            <Text style={styles.label}>Correo Electrónico</Text>
+            <Text style={styles.label}>Correo Electrónico o Usuario</Text>
             <TextInput
               style={styles.input}
-              placeholder="tu@correo.com"
+              placeholder="tu@correo.com o Administrador"
               placeholderTextColor="#A09382"
               value={email}
               onChangeText={setEmail}
-              keyboardType="email-address"
               autoCapitalize="none"
             />
           </View>

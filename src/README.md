@@ -39,7 +39,7 @@ En lugar de subir todo en un solo cambio, organicé mis avances con mensajes des
 ## Historial de Versiones y Releases
 - **`v0.1.0-alpha`**: Inicialización de mi repositorio local/remoto y estructura base de Expo.
 - **`v0.2.0-beta`**: Configuración inicial de pestañas e interfaz gráfica.
-- **`v1.0.0-rc`** *(Versión Actual)*: Flujo de autenticación completo con Firebase, carnet de vacunación en *Mi Compañero*, catálogo de razas/especies y navegación de 5 pestañas pulida.
+- **`v0.9.0-beta`** *(Versión Actual)*: Flujo de autenticación completo con Firebase, carnet de vacunación en *Mi Compañero*, catálogo de razas/especies y navegación de 5 pestañas pulida.
 
 ---
 
